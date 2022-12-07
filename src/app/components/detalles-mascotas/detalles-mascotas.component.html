@@ -1,0 +1,23 @@
+<h1 class="m-3">DETALLES</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Especie</th>
+      <th scope="col">Propietario</th>
+      <th scope="col">Raza</th>
+      <th scope="col">Sexo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="mascota">
+      <th scope="row">{{mascota.id}}</th>
+      <td>{{mascota.nombre}}</td>
+      <td>{{mascota.especie}}</td>
+      <td>{{mascota.propietario}}</td>
+      <td>{{mascota.raza}}</td>
+      <td>{{mascota.sexo}}</td>
+    </tr>
+  </tbody>
+</table>

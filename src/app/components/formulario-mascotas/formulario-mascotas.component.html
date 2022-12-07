@@ -1,0 +1,39 @@
+<form [formGroup]="formulario" (submit)="onSubmit()">
+  <input
+    type="text"
+    class="form-control"
+    formControlName="especie"
+    placeholder="Especie"
+  />
+  <input
+    type="number"
+    class="form-control"
+    formControlName="id"
+    placeholder="Id"
+  />
+  <input
+    type="string"
+    class="form-control"
+    formControlName="nombre"
+    placeholder="Nombre"
+  />
+  <input
+    type="string"
+    class="form-control"
+    formControlName="nombrePropietario"
+    placeholder="Propietario"
+  />
+  <input
+    type="string"
+    class="form-control"
+    formControlName="raza"
+    placeholder="Raza"
+  />
+  <input
+    type="string"
+    class="form-control"
+    formControlName="sexo"
+    placeholder="Sexo"
+  />
+  <button class="btn btn-dark" type="submit">Registrar mascota</button>
+</form>

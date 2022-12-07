@@ -1,0 +1,18 @@
+<h1 class="m-2">Lista de mascotas</h1>
+<div class="card w-50 m-2" *ngFor="let m of mascotas">
+  <div class="card-body">
+    <h5 class="card-title">{{ m.nombre }}</h5>
+    <p class="card-text">Edad: {{ m.edad }}</p>
+    <p class="card-text">Sexo: {{ m.sexo }}</p>
+    <button class="btn btn-dark mx-2" (click)="deleteMascota(m)">
+      Eliminar
+    </button>
+    <button class="btn btn-dark">
+      <a
+        class="text-decoration-none text-light"
+        routerLink="/añadir-mascotas/{{ m.id }}"
+        >Detalles</a
+      >
+    </button>
+  </div>
+</div>
